@@ -7,36 +7,102 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/header.css">
   <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
     *{
       margin: 0;
       padding: 0;
+      font-family: 'Noto Sans KR',sans-serif;
     }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    /* width 980px, 좌우 margin 100px로 설정하고 진행 중 */
     main>section{
       border: 1px solid black;
+      margin: 0 100px;
+      width: 980px;
     }
     .section1{
       height: 500px;
+      background-image: url(img/main/section1img.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-    .section2{
-      padding: 70px 100px;
+    .section2, .section3, .section4, .section5, .section6{
+      padding: 25px 0;
+    }
+    .section2>div{
+      margin-bottom: 10px;
+    }
+    .section2-title{
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+    }
+    .section2-title>div{
+      border: 1px solid black;
+      display: flex;
+      
+    }
+    .section2-title>div>div{
+      margin:0 10px;
     }
     .moviechart-block{
+      border: 1px solid black;
+    }
+    .moviechart-block>div{
       display: flex;
     }
     .moviechart{
-      margin-right:27px;
+      border: 1px solid black;
+      margin: 0 29.5px 0 0;
     }
     .moviechart img{
       height: 234px;
       width: 170px;
-      border-radius: 5%;
+      border-radius: 7.5%;
     }
     .event-blocks{
       display: flex;
     }
+    .event{
+      border: 1px solid black;
+      margin-right: 20px;
+    }
     .event img{
       height: 207px;
       width: 310px;
+      border-radius: 7.5%;
+    }
+    .section4-box{
+      display: flex;
+      justify-content: space-between;
+    }
+    .section4-box-img{
+      height: 264px;
+      width: 500px;
+      background-image: url(img/main/특별관1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    /* .section4-box-img img{
+      height: 264px;
+      width: 500px;
+    } */
+    .section4-box div{
+      border:1px solid black;
+      border-radius: 5%;
+    }
+    .section4-box-select div{
+      border: 1px solid black;
+      border-radius: 5%;
+      height: 65px;
+      width: 410px;
     }
     .section5{
       display: flex;
@@ -154,62 +220,99 @@
             <li>VIP 라운지</li>
           </ul>
         </li>
-        <li id="header--search">
-          검색하기
+        <li id="header-search">
+          <form class="header-search-box" action="" >
+            <input type="search-text" type="text" placeholder="검색하기">
+          </form>
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="section1">
-      비디오
+      <!-- <img src="img/main/section1img.png" alt=""> -->
     </section>
     <section class="section2">
+      <div class="section2-title">
+        <div class="section2-title-left">
+        <h3>무비차트</h3>
+        <div>|</div>
+        <h3>상영예정작</h3>
+        </div>
+        <div class="section2-title-right">
+          <div>전체보기</div>
+        </div>
+      </div>
       <div class="moviechart-block">
-        <div class="moviechart">
-          <img src="img/main/1.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/2.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/3.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/4.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/5.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/6.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/7.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/8.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/9.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/10.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/11.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/12.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/13.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/14.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/15.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/16.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/17.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/18.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/19.jpg" alt=""></div>
-        <div class="moviechart">
-          <img src="img/main/20.jpg" alt=""></div>
+        <!-- 5위씩 한 묶음으로 만들기 -->
+         <div class="moviechart-block1">
+          <div class="moviechart">
+            <img src="img/main/1.jpg" alt="">
+            <div><strong>세븐틴 투어 '팔로우...</strong></div>
+            <div>예매율 17.2%</div>
+          </div>
+          <div class="moviechart">
+            <img src="img/main/2.jpg" alt="">
+            <div><strong>파일럿</strong></div>
+            <div>예매율 %</div>
+          </div>
+          <div class="moviechart">
+            <img src="img/main/3.jpg" alt="">
+            <div><strong>행복의 나라</strong></div>
+            <div>예매율 %</div>
+          </div>
+          <div class="moviechart">
+            <img src="img/main/4.jpg" alt="">
+            <div><strong>리볼버</strong></div>
+            <div>예매율 %</div>
+          </div>
+          <div class="moviechart">
+            <img src="img/main/5.jpg" alt="">
+            <div><strong>빅토리</strong></div>
+            <div>예매율 %</div>
+          </div>
+        </div>        
+        <!-- 
+        <div class="moviechart-block2">
+          <div class="moviechart">
+            <img src="img/main/6.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/7.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/8.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/9.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/10.jpg" alt=""></div>
+        </div>
+        <div class="moviechart-block3">
+          <div class="moviechart">
+            <img src="img/main/11.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/12.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/13.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/14.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/15.jpg" alt=""></div>
+        </div>
+        <div class="moviechart-block4">
+          <div class="moviechart">
+            <img src="img/main/16.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/17.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/18.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/19.jpg" alt=""></div>
+          <div class="moviechart">
+            <img src="img/main/20.jpg" alt=""></div>
+        </div> -->
       </div>    
     </section>
     <section class="section3">
-      EVENT
+      <h3>EVENT</h3>
       <div class="event-blocks">
         <div class="event">
           <img src="img/main/event1.jpg" alt="">
@@ -222,8 +325,27 @@
         </div>
       </div> 
     </section>
-    <section class="section4">특별관
-
+    <section class="section4">
+      <h3>특별관</h3>
+      <div class="section4-box">
+        <div class="section4-box-img">
+          <!-- <img src="img/main/특별관1.png" alt=""> -->
+        </div>
+        <div class="section4-box-select">
+          <div class="section4-box-select1">
+            <strong>SUITE CINEMA</strong>
+          </div>
+          <div class="section4-box-select2">
+            <a href="#"><strong>CINE & LIVINGROOM</strong></a>
+          </div>
+          <div class="section4-box-select3">
+            <strong>4DX</strong>
+          </div>
+          <div class="section4-box-select4">
+            <strong>CINE de CHEF</strong>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section5">
       <section class="section5--section">패키지</section>

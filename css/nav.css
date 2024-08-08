@@ -2,6 +2,7 @@
     nav{
       border: 1px solid black;
       height: 35px;
+      width: 980px;
       margin: 0 100px;
     }
     nav ul{
@@ -28,12 +29,13 @@
     }
     .header--dropdown-content{
       display: none;
-      /* position: absolute; */
+      position: absolute;
       /* border: 1px solid black; */
       font-size: 13px;
       text-align: center;
       padding: 10px 10px;
       min-width: 80px;
+      background-color: white;
     }
     .header--dropdown-content li{
       margin-bottom: 10px;
@@ -41,8 +43,9 @@
     .header--dropdown:hover .header--dropdown-content{
       display: block;
     }
-    #header--search{
+    #header-search{
       margin-left: auto;
+      margin-right: 10px;
       line-height: 35px;
     }
     /* 네비 수정해야할 부분
