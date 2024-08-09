@@ -1,0 +1,123 @@
+main>section{
+  border: 1px solid black;
+  margin: 0 100px;
+  width: 980px;
+}
+.section1{
+  height: 500px;
+  background-image: url(../img/main/section1img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section2, .section3, .section4, .section5, .section6{
+  padding: 25px 0;
+}
+.section2>div{
+  margin-bottom: 20px;
+}
+.section2-title{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.section2-title>div{
+  border: 1px solid black;
+  display: flex;
+  
+}
+.section2-title>div>div{
+  margin:0 10px;
+}
+.moviechart-block{
+  border: 1px solid black;
+}
+.moviechart-block>div{
+  display: flex;
+}
+.moviechart{
+  border: 1px solid black;
+  margin: 0 29.5px 0 0;
+}
+.moviechart img{
+  height: 234px;
+  width: 170px;
+  border-radius: 7.5%;
+}
+.section3>div{
+  margin-bottom: 20px;
+}
+.section3-title{
+  display: flex;
+  justify-content: space-between;
+}
+.event-blocks{
+  display: flex;
+}
+.event{
+  border: 1px solid black;
+  margin-right: 20px;
+}
+.event img{
+  height: 207px;
+  width: 310px;
+  border-radius: 7.5%;
+}
+.section4>div{
+  margin-bottom: 10px;
+}
+.section4-title{
+  display: flex;
+  justify-content: space-between;
+}
+.section4-box{
+  display: flex;
+  justify-content: space-between;
+}
+.section4-box-img{
+  height: 264px;
+  width: 500px;
+  background-image: url(../img/main/특별관1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* .section4-box-img img{
+  height: 264px;
+  width: 500px;
+} */
+.section4-box div{
+  border:1px solid black;
+  border-radius: 5%;
+}
+.section4-box-select>div{
+  border: 1px solid black;
+  border-radius: 5%;
+  height: 65px;
+  width: 410px;
+  display: flex;
+  justify-content: space-between;
+}
+.section4-box-select>div>div{
+  margin:0 10px;
+  line-height: 65px;
+}
+.section5{
+  display: flex;
+}
+.section5--section{
+  border: 1px solid black;
+  height: 320px;
+  width: 270px;
+}
+.section6{
+  display: flex;
+  height: 238px;
+}
+.section6-mainblock{
+  width: 458px;
+}
+.section6-adblock>img{
+  height: 238px;
+  width: 211px;
+}

@@ -1,0 +1,18 @@
+footer{
+  border: 1px solid black;
+  width: 1040px;
+  height: 192px;
+}
+.policylist{
+  margin: 0 30px;
+  width: 980px;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+.policylist>li{
+  font-size: 13px;
+  font-weight: 400;
+}
