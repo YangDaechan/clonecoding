@@ -1,54 +1,69 @@
     /* 여기부터 네비 */
     nav{
-      border: 1px solid black;
+      /* border: 1px solid black; */
+      border-top: 1px solid rgb(238, 238, 238);
       height: 35px;
+      width: 1040px;
+      padding: 5px 0;
+      /* margin: 0 100px; */
+    }
+    .nav-wrap{
+      /* border: 1px solid black; */
       width: 980px;
-      margin: 0 100px;
+      margin: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     nav ul{
       display: flex;
       list-style: none;
     }
-    nav>ul>li{
+    /* nav>div>ul>li{
       display: inline-block;
-    }
-    /* .header--dropdown{
-      position: relative;
     } */
-    .header--dropdown a{
+    .header-dropdown a{
       text-decoration: none;
       padding: 12px 24px;
       color: black;
     }
-    .header--dropdown-menu{
+    .header-dropdown-menu{
       padding: 0 10px;
       line-height: 35px;
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: 500;
       min-width: 80px;
       text-align: center;
     }
-    .header--dropdown-content{
+    .header-dropdown-content{
       display: none;
       position: absolute;
-      /* border: 1px solid black; */
-      font-size: 13px;
-      text-align: center;
+      font-size: 14px;
       padding: 10px 10px;
       min-width: 80px;
       background-color: white;
+      /* width: 137px; */
     }
-    .header--dropdown-content li{
+    .header-dropdown-content dt, .header-dropdown-content dd{
       margin-bottom: 10px;
     }
-    .header--dropdown:hover .header--dropdown-content{
+    .header-dropdown-content dt{
+      margin-top: 10px;
+      font-weight: 700;
+    }
+    .header-dropdown-content dd{
+      font-weight: 400;
+    }
+    .header-dropdown:hover .header-dropdown-content{
       display: block;
     }
-    #header-search{
+    .search_wrap>input{
+      width: 180px;
+      height: 24px;
+    }
+
+    /* #header-search{
       margin-left: auto;
       margin-right: 10px;
       line-height: 35px;
-    }
-    /* 네비 수정해야할 부분
-    드롭다운 메뉴와 드롭다운 컨텐츠가 실제로는 서로 분리된 ul로 보임
-    현재는 ul 안에 ul을 넣어놓은 상태인데 시간이 남을때 내부 ul을 빼서 분리시켜야할듯 */
-    /* 여기까지 헤더네비 */
+    } */
